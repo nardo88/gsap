@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scroll Trigger Tutorial - 3 - Toggle Actions</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h1 class="header__title">Scroll Trigger Tutorial - 3 - Toggle Actions</h1>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../index.html" class="nav__link">На главную</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="top20">
+        <div class="container">
+            <h2>Переключатель действия</h2>
+            <p class="text top20">В качестве свойства <b>toggleClass</b> указыватеся строка с 4-мя словами. По умолчанию эта строчка выглядит вот так:</p>
+            <img src="./img1.jpg" alt="" class="img top20">
+            <p class="text top20">что означает каждое слово?</p>
+
+            
+            <ul class="ul-disc top20">
+                <li><b>первое</b> - означает что будет если тригер вошел в область анимации (onEnter) - т.е. play - проиграется</li>
+                <li><b>второе</b> - поведение тригера когда он покинет (onLeave) область анимации</li>
+                <li><b>третье</b> - поведение если он войдет в область обратно (onEnterBack)</li>
+                <li><b>четвертое</b> - поведение в случае если тригер покинет область в обратном направлении (onLeaveBack)</li>
+            </ul>
+            <p class="text top20">Какие значения можно использовать?</p>
+            <ul class="ul-disc top20">
+                <li><b>play</b> - проиграть анимацию один раз</li>
+                <li><b>restart</b> - повторить, т.е. если первым значением указать не play, а restart, то анимация будет проигрываться каждый раз как тригер заходит в область анимации</li>
+                <li><b>reverse</b> - играть анимацию в обратном порядке, т.е. по сути тригер вернется в свое исходное состояние</li>
+                <li><b>pause</b> - анимация поставится на паузу</li>
+                <li><b>resume</b> - анимация продолжится после паузы</li>
+                <li><b>reset</b> - сбросить анимацию. тригер моментально войдет в свое исходное состояние</li>
+                <li>complete<b></b> - моментально приводит тригер к его конечному состоянию анимации</li>
+            </ul>
+            <p class="text top20">Пример JavaScript</p>
+            <img src="./img2.jpg" alt="" class="img top20">
+        </div>
+    </section>
+
+
+
+
+    <section class="top50 top-line">
+        <div class="container">
+            <h2 class="title">Результат выполняемого кода</h2>
+
+            
+        </div>
+    </section>
+
+    <div class="div1"></div>
+    <div class="div2">
+        <div class="square"></div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="../../scripts/toggle-actions/script.js" ></script>
+</body>
+</html>
