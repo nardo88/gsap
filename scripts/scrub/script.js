@@ -1,7 +1,9 @@
 
+
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".square", {
-    x: 700,
+    translateX: 700,
     duration: 3,
     scrollTrigger: {
         trigger: ".square",

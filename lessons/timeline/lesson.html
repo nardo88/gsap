@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scroll Trigger Tutorial - 6 - Timeline</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+<body>
+    
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h1 class="header__title">Scroll Trigger Tutorial - 6 - Timeline</h1>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../index.html" class="nav__link">На главную</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="top20">
+        <div class="container">
+            <h2>Timeline</h2>
+            <p class="text top20">Допустим что нам необходимо сделать у одного элемента подряд три анимации, причем задача такая, что анимация должна проигрываться поочередно. Есть свойство <b>delay</b> c помощью которого можно задать задержку анимации. Вот как бы это выглядело:</p>
+            <img src="./img1.jpg" alt="" class="img top20">
+            <p class="text top20">Но такой способ ОЧЕНЬ и ОЧЕНЬ не удобный, так как нам пришлось бы каждый раз высчитывать через сколько запустить анимацию. К счастью <b>GSAP</b> предоставляет нам возможность управлять timeline-ом анимации</p>
+            <p class="text top20">Первое что нам нужно сделать это создать экземпляр объекта timeline. Объект помещаем в переменную (в нашем примере это tl)</p>
+            <img src="./img2.jpg" alt="" class="img top20">
+            <p class="text top20">Далее мы уже у переменной <b>tl</b> вызываем метод <b>to</b> и в него передаем параметры первой анимации. Ну а дальше используем чейнинг</p>
+            <img src="./img3.jpg" alt="" class="img top20">
+
+            <p class="text top20">Теперь что бы управлять анимацией, мы методу <b>timeline</b> должны передать такой же объект, который мы передавали до этого методу <b>to</b></p>
+            <img src="./img4.jpg" alt="" class="img top20">
+
+
+           
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="top50 top-line">
+        <div class="container">
+            <h2 class="title">Результат выполняемого кода</h2>
+
+            
+        </div>
+    </section>
+
+    <div class="panel"></div>
+    <div class="box"></div>
+    <div class="panel"></div>
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="../../scripts/timeline/script.js" ></script>
+</body>
+</html>
