@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scroll Trigger Tutorial - 2 - Start and End</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h1 class="header__title">Scroll Trigger Tutorial - 2 - Start and End</h1>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="../../index.html" class="nav__link">На главную</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="top20">
+        <div class="container">
+            <h2>Начало и конец анимации</h2>
+            <p class="text top20">В качестве свйоства <b>scrollTrigger</b> помимо строки, мы можем передать объект, который будет иметь следующие свойства:</p>
+            <ul class="top20 ul-disc">
+                <li><b>trigger</b> - это свойство содержит строку с селектором тригера (анимируемого объекта)</li>
+                <li><b>start</b> - начало анимации.
+                    <p class="top20">Возможные значения</p>
+                    <ul class=" ul-circle left20" >
+                        <li><b>400</b> - анимация стартанет когда тригер поднимется по скролу на 400 пикселей</li>
+                        <li><b>top center</b> - анимация начнется когда верхняя граница тригера будет на уровне центра вьюпорта</li>
+                        <li><b>top 30%</b> - вместо слова center можно указывать проценты высоты вьюпорта начиная от верхней границы. Вместо top можно указывать center или bottom</li>
+                    </ul> 
+                </li>
+                <li><b>end</b> - конец анимации. Здесь значение указывается так же как и у start</li>
+                <li><b>markers</b> - добавляет на страницу маркеры, которые показывают где начнется и акончится анимация. Нужна только для разрабов. 
+                <img src="./img1.jpg" alt="" class="img top20">
+                    
+                </li>
+                <li><b>toggleClass</b> - в промежутке начала и конца анимации будет добавлен класс который мы передадим этому свойству</li>
+            </ul>
+            <p class="text top20">Пример JavaScript</p>
+            <img src="./img2.jpg" alt="" class="img top20">
+            
+
+        </div>
+    </section>
+
+    <section class="top50 top-line">
+        <div class="container">
+            <h2 class="title">Результат выполняемого кода</h2>
+
+            
+        </div>
+    </section>
+
+    <div class="div1"></div>
+    <div class="div2">
+        <div class="square"></div>
+    </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="../../scripts/start-and_end/script.js" ></script>
+
+
+</body>
+</html>
