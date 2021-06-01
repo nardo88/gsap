@@ -16,7 +16,4 @@ tl.to('.box', {x: 500, opacity: 0.1, duration: 10})
     .to('.box', {x: 0, opacity: 1, duration: 7})
 
 
-/*
-    delay - отвечает за задержку анимации
-*/
 
